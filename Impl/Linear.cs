@@ -8,10 +8,19 @@ namespace FibonacciFun.Impl
 {
     internal class Linear : IFibonacciImplementation
     {
-        public static uint[] CalculateFibonacci(int n)
+        public static ulong[] CalculateFibonacci(int n)
         {
-            throw new NotImplementedException();
+            ulong first = 1;
+            ulong second = 1;
 
+            for(int i = 0; i < n; i++)
+            {
+                ulong tmp = first;
+                first += second;
+                second = tmp;
+            }
+
+            return [second];
         }
     }
 }

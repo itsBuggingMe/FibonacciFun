@@ -8,6 +8,6 @@ namespace FibonacciFun
 {
     internal interface IFibonacciImplementation
     {
-        abstract static uint[] CalculateFibonacci(int n);
+        abstract static ulong[] CalculateFibonacci(int n);
     }
 }

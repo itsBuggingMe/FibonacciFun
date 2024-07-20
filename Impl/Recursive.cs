@@ -10,14 +10,14 @@ namespace FibonacciFun.Impl
 {
     internal class Recursive : IFibonacciImplementation
     {
-        public static uint[] CalculateFibonacci(int n)
+        public static ulong[] CalculateFibonacci(int n)
         {
             return [Calculate(n)];
         }
 
-        private static uint Calculate(int n)
+        private static ulong Calculate(int n)
         {
-            if(n < 3)
+            if(n < 2)
                 return 1;
 
             return Calculate(n - 2) + Calculate(n - 1);
